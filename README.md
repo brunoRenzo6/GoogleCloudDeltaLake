@@ -24,6 +24,7 @@ https://cloud.google.com/storage/docs/uploading-objects#:~:text=Drag%20and%20dro
 * Submit a spark job to save these raw csv files now using Delta Table Format
 
  ```shell
-$ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta/jars/delta-core.jar gs://bkt-scd-spark-1/deltaSpark.jar
+$ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta/jars/delta-core.jar gs://bkt-scd-spark-1/csvToDelta.jar
 ```
-[csvToDelta.scala](csvToDelta/csvToDelta.scala)
+csvToDelta.jar (package version of [csvToDelta.scala](csvToDelta/csvToDelta.scala) Spark code)
+
