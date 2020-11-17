@@ -28,7 +28,7 @@ $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta
 ```
 csvToDelta.jar (package version of [csvToDelta.scala](csvToDelta/csvToDelta.scala) Spark code)
 
-#### Query current state on Python Jupyter Notebook
+* Query current state on Python Jupyter Notebook
  ```python
 from pyspark.sql import SparkSession
 
@@ -43,6 +43,7 @@ spark.sql("CREATE TABLE grupoProduto USING DELTA LOCATION 'gs://bkt-scd-delta-1/
 
 spark.sql("SELECT T1.*, T2.grupo_produto FROM CategoriaProduto t1 INNER JOIN GrupoProduto t2 ON t1.cod_grupo_produto = t2.cod_grupo_produto ORDER BY 1, 2").show()
 ```
+![](imgs/tableBeforeUpdate.PNG)
 
 ### Merge Update
 * Upload new data
