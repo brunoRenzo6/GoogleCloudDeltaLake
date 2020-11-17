@@ -15,11 +15,11 @@ MarketPlace use case
 
 ![](imgs/rawCSV.PNG)
 
-### Upload files to Google Cloud Storage
+## Upload files to Google Cloud Storage
 Use Cloud Storage bucket to store data.
 https://cloud.google.com/storage/docs/uploading-objects#:~:text=Drag%20and%20drop%20the%20desired,that%20appears%2C%20and%20click%20Open.
 
-### Apply Delta Table Format
+## Apply Delta Table Format
 * Create Dataproc cluster
 * Submit a spark job to save these raw csv files now using Delta Table Format
 
@@ -45,7 +45,7 @@ spark.sql("SELECT T1.*, T2.grupo_produto FROM CategoriaProduto t1 INNER JOIN Gru
 ```
 ![](imgs/tableBeforeUpdate.PNG)
 
-### Merge Update
+## Merge Update
 * Upload new data
 ![](imgs/imgs/tableNewData.PNG)
 * Submit a spark job to upload existing Delta Table
