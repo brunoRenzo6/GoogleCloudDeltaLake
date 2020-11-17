@@ -28,3 +28,14 @@ $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta
 ```
 csvToDelta.jar (package version of [csvToDelta.scala](csvToDelta/csvToDelta.scala) Spark code)
 
+
+### Merge Update
+* Upload new data
+* Submit a spark job to upload existing Delta Table
+
+ ```shell
+$ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta/jars/delta-core.jar gs://bkt-scd-spark-1/mergeDelta.jar
+```
+mergeDelta.jar (package version of [mergeDelta.scala](mergeDelta/mergeDelta.scala) Spark code)
+
+
