@@ -47,11 +47,30 @@ spark.sql("SELECT T1.*, T2.grupo_produto FROM CategoriaProduto t1 INNER JOIN Gru
 
 ### Merge Update
 * Upload new data
+![](imgs/imgs/tableNewData.PNG)
 * Submit a spark job to upload existing Delta Table
 
  ```shell
 $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta/jars/delta-core.jar gs://bkt-scd-spark-1/mergeDelta.jar
 ```
 mergeDelta.jar (package version of [mergeDelta.scala](mergeDelta/mergeDelta.scala) Spark code)
+
+
+* Query current state using Dataproc python Jupyter Notebook
+ ```python
+from pyspark.sql import SparkSession
+
+spark = SparkSession.builder \
+.config("spark.jars.packages",'io.delta:delta-core_2.12:0.4.0') \
+.getOrCreate()
+
+from delta.tables import *
+
+spark.sql("CREATE TABLE categoriaProduto USING DELTA LOCATION 'gs://bkt-scd-delta-1/categoriaProduto'")
+spark.sql("CREATE TABLE grupoProduto USING DELTA LOCATION 'gs://bkt-scd-delta-1/grupoProduto'")
+
+spark.sql("SELECT T1.*, T2.grupo_produto FROM CategoriaProduto t1 INNER JOIN GrupoProduto t2 ON t1.cod_grupo_produto = t2.cod_grupo_produto ORDER BY 1, 2").show()
+```
+![](imgs/tableAfterUpdate.PNG)
 
 
