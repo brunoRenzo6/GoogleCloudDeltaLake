@@ -47,7 +47,9 @@ spark.sql("SELECT T1.*, T2.grupo_produto FROM CategoriaProduto t1 INNER JOIN Gru
 
 ## Merge Update
 * Upload new data
-![](imgs/imgs/tableNewData.PNG)
+
+![](imgs/tableNewData.PNG)
+
 * Submit a spark job to upload existing Delta Table
 
  ```shell
