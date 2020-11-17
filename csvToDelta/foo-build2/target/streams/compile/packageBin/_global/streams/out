@@ -1,0 +1,9 @@
+[0m[[0m[0mdebug[0m] [0m[0mPackaging C:\Users\bruno\Desktop\BULK\DeltaLakeGCP\DataprocDeltaLake\sparkProject\foo-build2\target\scala-2.12\hello_2.12-0.1.0-SNAPSHOT.jar ...[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mInput file mappings:[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	example[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\bruno\Desktop\BULK\DeltaLakeGCP\DataprocDeltaLake\sparkProject\foo-build2\target\scala-2.12\classes\example[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	example\hello$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\bruno\Desktop\BULK\DeltaLakeGCP\DataprocDeltaLake\sparkProject\foo-build2\target\scala-2.12\classes\example\hello$.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	example\hello.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0m	  C:\Users\bruno\Desktop\BULK\DeltaLakeGCP\DataprocDeltaLake\sparkProject\foo-build2\target\scala-2.12\classes\example\hello.class[0m[0J
+[0m[[0m[0mdebug[0m] [0m[0mDone packaging.[0m[0J
