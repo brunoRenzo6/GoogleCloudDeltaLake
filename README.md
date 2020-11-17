@@ -13,4 +13,4 @@ $ spark-shell --jars /usr/lib/delta/jars/delta-core.jar
 MarketPlace use case
 
 
-![](/imgs/rawCSV.png)
+![](GoogleCloudDeltaLake/imgs/rawCSV.png)
