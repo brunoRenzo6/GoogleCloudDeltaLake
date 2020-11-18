@@ -1,3 +1,5 @@
+![](imgs/projectLogo.PNG)
+
 # Running Delta Lake on Google Cloud
 ##### Contact Information:
 Bruno Nogueira Renzo<br>
