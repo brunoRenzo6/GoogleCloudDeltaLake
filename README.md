@@ -18,6 +18,7 @@ $ spark-shell --jars /usr/lib/delta/jars/delta-core.jar
 # MarketPlace Implementation
 
 MarketPlace use case
+##### Google Cloud, Dataproc, Spark, Delta Lake, Jupyter Notebook
 
 
 ![](imgs/rawCSV.PNG)
