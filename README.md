@@ -1,4 +1,4 @@
-![](imgs/projectLogo.PNG)
+![](imgs/projectLogo.png)
 
 # Running Delta Lake on Google Cloud
 ##### Contact Information:
