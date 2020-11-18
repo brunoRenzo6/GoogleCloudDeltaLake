@@ -36,7 +36,7 @@ $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta
 ```
 csvToDelta.jar (package version of [csvToDelta.scala](csvToDelta/csvToDelta.scala) Spark code)
 
-* Query current state using Dataproc python Jupyter Notebook
+* Query current state using Dataproc **python Jupyter Notebook**
  ```python
 from pyspark.sql import SparkSession
 
@@ -63,7 +63,7 @@ $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta
 mergeDelta.jar (package version of [mergeDelta.scala](mergeDelta/mergeDelta.scala) Spark code)
 
 
-* Query current state using Dataproc python Jupyter Notebook
+* Query current state using Dataproc **python Jupyter Notebook**
  ```python
 from pyspark.sql import SparkSession
 
