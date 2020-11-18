@@ -5,7 +5,9 @@ brunorenzo6@outlook.com<br>
 Bulky Consulting & Analytics<br>
 
 ### Intro:
- Delta Lake is now available in the latest version of Cloud Dataproc (version 1.5 Preview).
+Delta Lake is an open-source storage layer that brings ACID
+transactions to Apache Spark™ and big data workloads.<br>
+Delta Lake is now available in the latest version of Cloud Dataproc (version 1.5 Preview).
  
  ```shell
 $ spark-shell --packages io.delta:delta-core_2.12:0.4.0
