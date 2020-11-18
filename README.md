@@ -1,7 +1,7 @@
 # Running Delta Lake on Google Cloud
-Bruno Nogueira Renzo
-brunorenzo6@outlook.com
-Bulky Consulting & Analytics
+Bruno Nogueira Renzo<br>
+brunorenzo6@outlook.com<br>
+Bulky Consulting & Analytics<br>
 
  Delta Lake is now available in the latest version of Cloud Dataproc (version 1.5 Preview).
  
