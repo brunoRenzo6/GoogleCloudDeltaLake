@@ -16,6 +16,7 @@ $ spark-shell --packages io.delta:delta-core_2.12:0.4.0
 OR
 $ spark-shell --jars /usr/lib/delta/jars/delta-core.jar
 ```
+Obs: GCP-->Compute Engine-->VM Instances-->SSH to access the Dataproc Cluster
 
 # MarketPlace Implementation
 ##### #GoogleCloud #Dataproc #Spark #DeltaLake #JupyterNotebook
