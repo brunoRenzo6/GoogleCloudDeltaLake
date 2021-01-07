@@ -16,7 +16,7 @@ $ spark-shell --packages io.delta:delta-core_2.12:0.4.0
 OR
 $ spark-shell --jars /usr/lib/delta/jars/delta-core.jar
 ```
-Obs: GCP-->Compute Engine-->VM Instances-->SSH to access the Dataproc Cluster
+
 
 # MarketPlace Implementation
 ##### #GoogleCloud #Dataproc #Spark #DeltaLake #JupyterNotebook
@@ -33,6 +33,8 @@ https://cloud.google.com/storage/docs/uploading-objects#:~:text=Drag%20and%20dro
 ## Apply Delta Table Format
 * Create Dataproc cluster
 * Submit a spark job to save these raw csv files now using Delta Table Format
+
+Obs: GCP-->Compute Engine-->VM Instances-->SSH to access the Dataproc Cluster
 
  ```shell
 $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta/jars/delta-core.jar gs://bkt-scd-spark-1/csvToDelta.jar
@@ -59,6 +61,8 @@ spark.sql("SELECT T1.*, T2.grupo_produto FROM CategoriaProduto t1 INNER JOIN Gru
 ## Merge Update
 * Upload new data
 * Submit a spark job to upload existing Delta Table
+
+Obs: GCP-->Compute Engine-->VM Instances-->SSH to access the Dataproc Cluster
 
  ```shell
 $ spark-submit  --deploy-mode client --class example.hello --jars /usr/lib/delta/jars/delta-core.jar gs://bkt-scd-spark-1/mergeDelta.jar
